@@ -1,0 +1,12 @@
+## Version 1.3 ##
+- Changed TOKEN into a variable in order for the GitHub to be public
+- Remade GitHub repository in order to make TOKEN unfindable
+
+## Version 1.2 ##
+- Launched Willo to GitHub
+
+## Version 1.1 ##
+- Added 3 application (slash) commands: Clear, Help, Test
+
+## Version 1.0 ##
+- Initial launch of Willo
