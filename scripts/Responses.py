@@ -86,9 +86,18 @@ async def introduce(message):
                 "However I do have some bot like functions such as playing music! :D Therefore I have also been deployed in other servers.\n"
                 "I do not work with a preset, just speak to me with my name and I will respond! (Maybe not always)\n"
                 "As of right now I am only online when my maker has my script running. Not to worry tho, as a 24/7 uptime is in production.\n"
-                "Anywway, I hope you will enjoy my presence. If you have any questions or suggestions, ask <@254534396390932491>!\n"
+                "Anyway, I hope you will enjoy my presence. If you have any questions or suggestions, ask <@254534396390932491>!\n"
                 "This is my first launch, I will keep you posted if I ever get updated!\n"
-                "*V1.4*")
+                "*V1.5*")
+
+async def update(message):
+    if message.author.id == 254534396390932491:
+            await message.channel.send(
+                "@everyone **Patch notes v1.5**\n"
+                "Yes! My first update is here! I am now in version 1.5! These are my new functions:\n"
+                "- ...\n\n"
+                "*Yes, patch 1.5, the first 4 patches where back-end so I didn't post updates.*\n"
+                "*V1.5*")
 
 async def commands(message):
     if message.author.id == 254534396390932491:
