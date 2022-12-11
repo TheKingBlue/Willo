@@ -1,3 +1,10 @@
+## Version 1.5 - First patch notes ##
+- Added update()
+- Fixed spelling mistake in introduce()
+
+Back-end:
+- Removed unnecessary import from Bot.py
+
 ## Version 1.4 - Clean back-end ##
 - Moved music commands to seperate file
 - Moved chat commands to seperate file

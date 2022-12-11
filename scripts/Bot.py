@@ -4,7 +4,6 @@ TOKEN = "" # Never push your token to GitHub!
 import discord
 from discord import app_commands
 import asyncio
-import random
 
 # local
 import Music
@@ -47,7 +46,7 @@ async def clear(interaction: discord.Interaction, amount: int):
 @tree.error
 async def on_app_command_error(interaction, error):
     if isinstance(error, app_commands.MissingPermissions):
-        await interaction.response.send_message(error, ephemeral =True)
+        await interaction.response.send_message(error, ephemeral=True)
     else: raise error
 
 @bot.event
