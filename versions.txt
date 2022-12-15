@@ -1,9 +1,13 @@
-## Version 1.5 - First patch notes ##
+## Version 1.6 - First patch notes ##
 - Added update()
 - Fixed spelling mistake in introduce()
 
 Back-end:
 - Removed unnecessary import from Bot.py
+
+## Version 1.5 - Remake requirements.txt ##
+- Remade requirements.txt to be compatible with pip install -r
+- Put old requirements.txt into info.txt
 
 ## Version 1.4 - Clean back-end ##
 - Moved music commands to seperate file
