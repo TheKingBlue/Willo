@@ -77,29 +77,32 @@ async def on_message(message):
 
 
     # commands
-    if message.content.lower().startswith('commands'):
+    if message.content.lower().startswith(('commands', 'willo commands')):
         await Responses.commands(message)
     
-    if message.content.lower().startswith('help'):
+    if message.content.lower().startswith(('help', 'willo help')):
         await Responses.help(message)
     
-    if message.content.lower().startswith('decide on'):
+    if message.content.lower().startswith(('decide on', 'willo decide on')):
         await Responses.decide(message)
     
     if message.content.lower().startswith('willo introduce'):
         await Responses.introduce(message)
+    
+    if message.content.lower().startswith('willo update'):
+        await Responses.introduce(message)
 
 
     # message responses
-    if message.content.lower().startswith(('hello', 'hi', 'hey', 'hallo', 'hoi')):
+    if message.content.lower().startswith(('hello ', 'hi ', 'hey ', 'hallo ', 'hoi ', 'jo ', 'yo ', 'willo hello ', 'willo hi ', 'willo hey ', 'willo hallo ', 'willo hoi ', 'willo jo ', 'willo yo ')):
         await Responses.greet(message)
 
     if message.content.lower().startswith('willo'):
-        await Responses.willo(message)
+         await Responses.willo(message)
     
     
     # Gif/Image responses
-    if message.content.lower().startswith(('kys', 'https://tenor.com/view/kys-saul-goodman-better-call-saul-gif-24336468', 'https://tenor.com/view/bill-nye-consider-the-following-kill-yourself-gif-24441260')):
+    if message.content.lower().startswith(('kys', 'https://tenor.com/view/kys-saul-goodman-better-call-saul-gif-24336468', 'https://tenor.com/view/bill-nye-consider-the-following-kill-yourself-gif-24441260', 'kill yourself')):
         await message.channel.send("Please don't.")
 
     if message.content.startswith(('https://tenor.com/view/hop-on-valorant-gif-25789851', 'https://tenor.com/view/valorant-play-valorant-valorant-enjoyers-chips-wanna-play-valorant-gif-22258400', 'https://tenor.com/view/valorant-valo-gigachad-gif-23118627', 'https://tenor.com/view/valorant-play-valorant-hop-on-valorant-hop-on-anime-kissing-gif-23656387', 'https://tenor.com/view/hasbulla-gif-22466319')) and message.author.id == 301046737764745216:

@@ -1,9 +1,14 @@
 ## Version 1.6 - First patch notes ##
 - Added update()
 - Fixed spelling mistake in introduce()
+- Willo removes the command message of introduce() and update()
+- Added a response to yo and jo
+- Added a space to greeting responses in order for Willo to not respond to words that start with the greeting, per expale: you (yo)
+- Added a few people to the 
 
 Back-end:
 - Removed unnecessary import from Bot.py
+- Removed info.txt and added invite link to README
 
 ## Version 1.5 - Remake requirements.txt ##
 - Remade requirements.txt to be compatible with pip install -r
