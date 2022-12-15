@@ -1,3 +1,7 @@
+## Version 1.5 - Remake requirements.txt ##
+- Remade requirements.txt to be compatible with pip install -r
+- Put old requirements.txt into info.txt
+
 ## Version 1.4 - Clean back-end ##
 - Moved music commands to seperate file
 - Moved chat commands to seperate file
