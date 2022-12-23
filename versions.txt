@@ -1,33 +1,58 @@
 ## Version 1.6 - First patch notes ##
-- Added update()
-- Fixed spelling mistake in introduce()
-- Willo removes the command message of introduce() and update()
+Changes to willo & New additions
+- Made willo speak English only
+- All command now start with 'Willo'
+- Willo now responds to goodnight messages
+- Added three new text responses
+- Added eight new GIF responses 
+
+Greetings
+- Added a few people to the personal greetings list 
+- Willo will now respond to a greeting starting with his name 
 - Added a response to yo and jo
 - Added a space to greeting responses in order for Willo to not respond to words that start with the greeting, per expale: you (yo)
-- Added a few people to the 
 
-Back-end:
+Dev commands & Fixes
+- Added update()
+- Willo removes the command message of introduce() and update()
+- Fixed spelling mistake in introduce()
+- Fixed some major bugs in the 'Decide on' command
+
+
+Back-end # NOT for posting #
 - Removed unnecessary import from Bot.py
 - Removed info.txt and added invite link to README
+
+
 
 ## Version 1.5 - Remake requirements.txt ##
 - Remade requirements.txt to be compatible with pip install -r
 - Put old requirements.txt into info.txt
+
+
 
 ## Version 1.4 - Clean back-end ##
 - Moved music commands to seperate file
 - Moved chat commands to seperate file
 - removed unnecessary code
 
+
+
 ## Version 1.3 - Become public ##
 - Changed TOKEN into a variable in order for the GitHub to be public
 - Remade GitHub repository in order to make TOKEN unfindable
 
+
+
 ## Version 1.2 - To GitHub! ##
 - Launched Willo to GitHub
 
+
+
 ## Version 1.1 - Application commands##
 - Added 3 application (slash) commands: Clear, Help, Test
+
+
 
 ## Version 1.0 - Launch ##
 - Initial launch of Willo

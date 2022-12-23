@@ -1,4 +1,4 @@
-TOKEN = "" # Never push your token to GitHub!
+TOKEN = "OTY4ODI3MTA1MDE2MTY0Mzcy.G9lwu1.o_NNV4-hGglNkRNoTGjbZEhev9McS1ZkRUe8dc" # Never push your token to GitHub!
 
 # packages
 import discord
@@ -91,21 +91,30 @@ async def on_message(message):
     
     if message.content.lower().startswith('willo update'):
         await Responses.introduce(message)
+    
+    if message.content.lower().startswith('willo cum'):
+        await message.channel.send("https://tenor.com/view/cum-penis-cum-i-creamed-cumming-xd-gif-20404521")
 
 
     # message responses
-    if message.content.lower().startswith(('hello ', 'hi ', 'hey ', 'hallo ', 'hoi ', 'jo ', 'yo ', 'willo hello ', 'willo hi ', 'willo hey ', 'willo hallo ', 'willo hoi ', 'willo jo ', 'willo yo ')):
+    if message.content.lower().startswith(('hello ', 'hi ', 'hey ', 'hallo ', 'hoi ', 'jo ', 'yo ', 'willo hello ', 'willo hi ', 'willo hey ', 'willo hallo ', 'willo hoi ', 'willo jo ', 'willo yo ')) or message.content.lower() == 'hello' or message.content.lower() == 'hi'or message.content.lower() == 'hey'or message.content.lower() == 'hallo' or message.content.lower() == 'hoi' or message.content.lower() == 'jo' or message.content.lower() == 'yo' or message.content.lower() == 'willo hello' or message.content.lower() == 'willo hi' or message.content.lower() == 'willo hey'or message.content.lower() == 'willo hallo'or message.content.lower() == 'willo hoi'or message.content.lower() == 'willo jo'or message.content.lower() == 'willo yo':
         await Responses.greet(message)
+    
+    if message.content.lower().startswith(('gn ', 'goodnight ', 'gngn ', 'night ')) or message.content.lower() == 'gn' or message.content.lower() == 'goodnight' or message.content.lower() == 'gngn' or message.content.lower() == 'night':
+        await Responses.goodnight(message)
 
     if message.content.lower().startswith('willo'):
-         await Responses.willo(message)
+        await Responses.willo(message)
+    
+    if message.content.lower().startswith('on god ') or message.content.lower() == 'on god':
+        await message.channel.send("fr fr")
     
     
     # Gif/Image responses
     if message.content.lower().startswith(('kys', 'https://tenor.com/view/kys-saul-goodman-better-call-saul-gif-24336468', 'https://tenor.com/view/bill-nye-consider-the-following-kill-yourself-gif-24441260', 'kill yourself')):
         await message.channel.send("Please don't.")
 
-    if message.content.startswith(('https://tenor.com/view/hop-on-valorant-gif-25789851', 'https://tenor.com/view/valorant-play-valorant-valorant-enjoyers-chips-wanna-play-valorant-gif-22258400', 'https://tenor.com/view/valorant-valo-gigachad-gif-23118627', 'https://tenor.com/view/valorant-play-valorant-hop-on-valorant-hop-on-anime-kissing-gif-23656387', 'https://tenor.com/view/hasbulla-gif-22466319')) and message.author.id == 301046737764745216:
+    if message.content.startswith(('https://tenor.com/view/hop-on-valorant-gif-25789851', 'https://tenor.com/view/valorant-play-valorant-valorant-enjoyers-chips-wanna-play-valorant-gif-22258400', 'https://tenor.com/view/valorant-valo-gigachad-gif-23118627', 'https://tenor.com/view/valorant-play-valorant-hop-on-valorant-hop-on-anime-kissing-gif-23656387', 'https://tenor.com/view/hasbulla-gif-22466319', 'https://tenor.com/view/valorant-valorant-meme-play-valorant-hop-on-valorant-valorant-time-gif-26090808')) and message.author.id == 301046737764745216:
         await message.channel.send('Addiction moment')
     
     if message.content.startswith('https://tenor.com/view/so-no-head-animal-crossing-break-phone-tom-nook-no-head-gif-24545244'):
@@ -146,7 +155,7 @@ async def on_message(message):
     if message.content.startswith('https://cdn.discordapp.com/attachments/326424296933163018/1042195337063960636/unknown.png'):
         await message.channel.send("https://cdn.discordapp.com/attachments/613729945830555648/1047623673206550598/unknown.png")
     
-    if message.content.startswith(('https://tenor.com/view/get-real-yoru-valorant-yoru-valorant-get-gif-25282277', 'https://tenor.com/view/justfin-jefferson-j-jettas-jettas-jetta-nfl-gif-25986060', 'https://tenor.com/view/get-real-cat-skate-funny-meme-gif-18666878', 'https://tenor.com/view/get-real-gif-25364817')):
+    if message.content.startswith(('https://tenor.com/view/get-real-yoru-valorant-yoru-valorant-get-gif-25282277', 'https://tenor.com/view/justfin-jefferson-j-jettas-jettas-jetta-nfl-gif-25986060', 'https://tenor.com/view/get-real-cat-skate-funny-meme-gif-18666878', 'https://tenor.com/view/get-real-gif-25364817', 'https://tenor.com/view/get-real-cats-cat-kittens-gif-22323194')):
         await message.channel.send("Getting real!") 
         await message.channel.send("https://tenor.com/view/load-loading-april-fools-gif-5435835")
     
@@ -160,5 +169,23 @@ async def on_message(message):
     
     if message.content.startswith('https://tenor.com/view/shut-up-cat-monch-cat-monch-spinfal-gif-19376414'):
         await message.channel.send("https://tenor.com/view/reverse-card-uno-uno-cards-gif-13032597")
+
+    if message.content.startswith('https://tenor.com/view/aram-time-gif-22182013'):
+        await message.channel.send("ARAM time!")
+    
+    if message.content.startswith('https://c.tenor.com/jQh7s68AGAgAAAAM/cock-cock-located.gif'):
+        await message.channel.send(":detective: :mag: ")
+
+    if message.content.startswith(('https://tenor.com/view/ok-ok-and-okay-buddy-dont-care-didnt-ask-gif-25239605', 'https://tenor.com/view/ok-and-ok-and-whole-sqaud-gif-22248092')):
+        await message.channel.send("https://tenor.com/view/mrroasty-and-niklavs-niklavs-and-roasty-niklavs100and-mrroasty99-niklavs100-niklavs-gif-20207493")
+    
+    if message.content.startswith('https://tenor.com/view/british-dune-gif-24757881'):
+        await message.channel.send("Oi oi!")
+    
+    if message.content.startswith('https://tenor.com/view/jetstream-sam-n-word-gif-25301615'):
+        await message.channel.send("Brother no.")
+    
+    if message.content.startswith('https://tenor.com/view/griddy-griddy-dance-right-foot-creep-get-griddy-gif-25395586'):
+        await message.channel.send("https://tenor.com/view/griddy-gif-25113845")
 
 bot.run(TOKEN)

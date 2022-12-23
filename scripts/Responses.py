@@ -2,6 +2,7 @@ import random
 
 #global variables
 GREETING = ['Hallo', 'Hey', 'Goededag', 'Sup', 'Heyo', 'Yo']
+GN = ['Goodnight', 'Sleep tight', 'Rest well', 'Night Night', 'Sleep well']
 COMMANDS = 'Commands, Help, Decide on, play, Skip, Pause, Continue, Queue, Leave'
 
 async def decide(message):
@@ -25,44 +26,47 @@ async def decide(message):
                 choices += [item]
     await message.channel.send(random.choice(choices))
 
+async def get_name(message):
+    if message.author.id == 256865001757736960:
+        return "Daniël"
+    elif message.author.id == 254534396390932491:
+        return "Matthias"
+    elif message.author.id == 146629406398480384:
+        return "Leonie"
+    elif message.author.id == 146682730321543169:
+        return "Koen"
+    elif message.author.id == 328930345800171520:
+        return "Sacha"
+    elif message.author.id == 265805417765011456:
+        return "Asllan"
+    elif message.author.id == 295508105322561536:
+        return "Bas"
+    elif message.author.id == 147397202753486850:
+        return "Jim"
+    elif message.author.id == 687024689922703381:
+        return "Femke"
+    elif message.author.id == 273586584937562113:
+        return "Jolan"
+    elif message.author.id == 256858825171140609:
+        return ", holy shit het is Joran"
+    elif message.author.id == 237134274929754112:
+        return "Pepijn"
+    elif message.author.id == 540914374131580928:
+        return "Tommie"
+    elif message.author.id == 301046737764745216:
+        return "Jarno"
+    elif message.author.id == 357153700139237378:
+        return "Sem"
+    elif message.author.id == 293300046093484043:
+        return "Mees"
+    elif message.author.id == 357153700139237378:
+        return "Jamie"
+    else:
+        return None
+
 async def greet(message):
     greet = random.choice(GREETING)
-    if message.author.id == 256865001757736960:
-        naam = "Daniël"
-    elif message.author.id == 254534396390932491:
-        naam = "Matthias"
-    elif message.author.id == 146629406398480384:
-        naam = "Leonie"
-    elif message.author.id == 146682730321543169:
-        naam = "Koen"
-    elif message.author.id == 328930345800171520:
-        naam = "Sacha"
-    elif message.author.id == 265805417765011456:
-        naam = "Asllan"
-    elif message.author.id == 295508105322561536:
-        naam = "Bas"
-    elif message.author.id == 147397202753486850:
-        naam = "Jim"
-    elif message.author.id == 687024689922703381:
-        naam = "Femke"
-    elif message.author.id == 273586584937562113:
-        naam = "Jolan"
-    elif message.author.id == 256858825171140609:
-        naam = ", holy shit het is Joran"
-    elif message.author.id == 237134274929754112:
-        naam = "Pepijn"
-    elif message.author.id == 540914374131580928:
-        naam = "Tommie"
-    elif message.author.id == 301046737764745216:
-        naam = "Jarno"
-    elif message.author.id == 357153700139237378:
-        naam = "Sem"
-    elif message.author.id == 293300046093484043:
-        naam = "Mees"
-    elif message.author.id == 357153700139237378:
-        naam = "Jamie"
-    else:
-        naam = None
+    naam = await get_name(message)
     
     if naam == None:
         await message.channel.send(f'{greet}!')
@@ -71,9 +75,18 @@ async def greet(message):
     else:
         await message.channel.send(f"{greet} {naam}!")
     
+async def goodnight(message):
+    gn = random.choice(GN)
+    naam = await get_name(message)
+
+    if naam == None:
+        await message.channel.send(f'{gn}!')
+    else:
+        await message.channel.send(f"{gn} {naam}!")
+
 async def willo(message):
     content = message.content.lower()
-    if message.content.lower().startswith(('willo play', 'willo pause', 'willo continue', 'willo stop', 'willo leave', 'willo queue', 'willo skip', 'willo introduce', 'willo update', 'willo commands', 'willo help', 'willo decide on')):
+    if message.content.lower().startswith(('willo play', 'willo pause', 'willo continue', 'willo stop', 'willo leave', 'willo queue', 'willo skip', 'willo introduce', 'willo update', 'willo commands', 'willo help', 'willo decide on', 'willo cum')):
         pass
     elif content == 'willo' or content == 'willo?' or content == 'willo ':
         await message.channel.send('Yes?')
@@ -105,10 +118,24 @@ async def introduce(message):
 async def update(message):
     if message.author.id == 254534396390932491:
         await message.channel.send(
-            "@everyone **Patch notes v1.5**\n"
-            "Yes! My first update is here! I am now in version 1.5! These are my new functions:\n"
-            "- ...\n\n"
-            "*Yes, patch 1.5, the first 4 patches where back-end so I didn't post updates.*\n"
+            "@everyone **Patch notes v1.6**\n"
+            "Yes! My first update is here! I am now in version 1.6! These are my new functions:\n"
+            "Changes to willo & New additions\n"
+            "- Made willo speak English only\n"
+            "- All command now start with 'Willo'\n"
+            "- Willo now responds to goodnight messages\n"
+            "- Added three new text responses\n"
+            "- Added eight new GIF responses\n\n"
+            "Greetings\n"
+            "- Added a few people to the personal greetings list\n"
+            "- Willo will now respond to a greeting starting with his name\n"
+            "- Added a response to yo and jo\n"
+            "- Added a space to greeting responses in order for Willo to not respond to words that start with the greeting, per expale: you (yo)\n\n"
+            "Dev commands & Fixes\n"
+            "- Added update()\n"
+            "- Willo removes the command message of introduce() and update()\n"
+            "- Fixed spelling mistake in introduce()\n"
+            "- Fixed some major bugs in the 'Decide on' command\n\n"
             "*V1.6*")
         await message.delete()
 
