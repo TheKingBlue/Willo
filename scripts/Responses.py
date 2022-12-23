@@ -3,7 +3,7 @@ import random
 #global variables
 GREETING = ['Hallo', 'Hey', 'Goededag', 'Sup', 'Heyo', 'Yo']
 GN = ['Goodnight', 'Sleep tight', 'Rest well', 'Night Night', 'Sleep well']
-COMMANDS = 'Commands, Help, Decide on, play, Skip, Pause, Continue, Queue, Leave'
+COMMANDS = 'Commands, Help, Decide on, Cum, Play, Skip, Pause, Continue, Queue, Leave'
 
 async def decide(message):
     if message.content.startswith('willo'):
