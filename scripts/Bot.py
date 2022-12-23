@@ -90,7 +90,7 @@ async def on_message(message):
         await Responses.introduce(message)
     
     if message.content.lower().startswith('willo update'):
-        await Responses.introduce(message)
+        await Responses.update(message)
     
     if message.content.lower().startswith('willo cum'):
         await message.channel.send("https://tenor.com/view/cum-penis-cum-i-creamed-cumming-xd-gif-20404521")
