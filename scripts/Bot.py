@@ -1,4 +1,4 @@
-TOKEN = "OTY4ODI3MTA1MDE2MTY0Mzcy.G9lwu1.o_NNV4-hGglNkRNoTGjbZEhev9McS1ZkRUe8dc" # Never push your token to GitHub!
+TOKEN = "" # Never push your token to GitHub!
 
 # packages
 import discord
