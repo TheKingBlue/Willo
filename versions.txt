@@ -24,7 +24,6 @@ Back-end # NOT for posting #
 - Removed info.txt and added invite link to README
 
 
-
 ## Version 1.5 - Remake requirements.txt ##
 - Remade requirements.txt to be compatible with pip install -r
 - Put old requirements.txt into info.txt
