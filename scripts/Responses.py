@@ -11,19 +11,10 @@ async def decide(message):
     else:
         content = message.content[9:]
     choices = []
-    options = []
-    while ',' in content:
-        if content != ',' and content != ' ,':
-            idx = content.index(',')
-            arg = content[:idx]
-            content = content[idx+1:]
-            choices += [arg]
-    if content != ',' and content != ' ,':
-        arg = content
-        options += [arg]
-        for item in options:
-            if item != ' ' or '':
-                choices += [item]
+    items = content.split(',')
+    for item in items:
+        if item != '' and item != ' ':
+            choices += [item]
     await message.channel.send(random.choice(choices))
 
 async def get_name(message):
