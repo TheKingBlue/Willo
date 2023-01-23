@@ -1,3 +1,6 @@
+## Version 2.0 ##
+- Willo now runs 24/7 on a RasberryPi
+
 ## Version 1.6 - First patch notes ##
 Changes to willo & New additions
 - Made willo speak English only

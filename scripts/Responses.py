@@ -109,25 +109,10 @@ async def introduce(message):
 async def update(message):
     if message.author.id == 254534396390932491:
         await message.channel.send(
-            "@everyone **Patch notes v1.6**\n"
-            "Yes! My first update is here! I am now in version 1.6! These are my new functions:\n"
-            "Changes to willo & New additions\n"
-            "- Made willo speak English only\n"
-            "- All command now start with 'Willo'\n"
-            "- Willo now responds to goodnight messages\n"
-            "- Added three new text responses\n"
-            "- Added eight new GIF responses\n\n"
-            "Greetings\n"
-            "- Added a few people to the personal greetings list\n"
-            "- Willo will now respond to a greeting starting with his name\n"
-            "- Added a response to yo and jo\n"
-            "- Added a space to greeting responses in order for Willo to not respond to words that start with the greeting, per expale: you (yo)\n\n"
-            "Dev commands & Fixes\n"
-            "- Added update()\n"
-            "- Willo removes the command message of introduce() and update()\n"
-            "- Fixed spelling mistake in introduce()\n"
-            "- Fixed some major bugs in the 'Decide on' command\n\n"
-            "*V1.6*")
+            "@everyone **Patch notes v2.0**\n"
+            "Yes! My second update! I am now in version 2.0!\n"
+            "I now run 24/7 on a RasberryPI, a mini-server in <@254534396390932491>'s house!\n\n"
+            "*V2.0*")
         await message.delete()
 
 async def commands(message):
