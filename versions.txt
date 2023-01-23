@@ -1,3 +1,6 @@
+## Version 2.1 ##
+- Test to check auto-update
+
 ## Version 2.0 ##
 - Willo now runs 24/7 on a RasberryPi
 
