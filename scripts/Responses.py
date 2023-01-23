@@ -77,7 +77,7 @@ async def goodnight(message):
 
 async def willo(message):
     content = message.content.lower()
-    if message.content.lower().startswith(('willo play', 'willo pause', 'willo continue', 'willo stop', 'willo leave', 'willo queue', 'willo skip', 'willo introduce', 'willo update', 'willo commands', 'willo help', 'willo decide on', 'willo cum')):
+    if message.content.lower().startswith(('willo play', 'willo pause', 'willo continue', 'willo stop', 'willo leave', 'willo queue', 'willo skip', 'willo introduce', 'willo update', 'willo commands', 'willo help', 'willo decide on', 'willo cum', 'willo hello', 'willo hi', 'willo hey', 'willo hallo', 'willo hoi', 'willo jo', 'willo yo', 'willo sup')):
         pass
     elif content == 'willo' or content == 'willo?' or content == 'willo ':
         await message.channel.send('Yes?')
