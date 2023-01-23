@@ -103,7 +103,7 @@ async def introduce(message):
         "As of right now I am only online when my maker has my script running. Not to worry tho, as a 24/7 uptime is in production.\n"
         "Anyway, I hope you will enjoy my presence. If you have any questions or suggestions, ask <@254534396390932491>!\n"
         "This is my first launch, I will keep you posted if I ever get updated!\n"
-        "*V1.6*")
+        "*V2.1*")
         await message.delete()
 
 async def update(message):
