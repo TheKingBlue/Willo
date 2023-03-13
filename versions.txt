@@ -1,3 +1,7 @@
+## Version 2.2 ##
+- Added goodmorning
+- Added a greeting
+
 ## Version 2.1 ##
 - Test to check auto-update
 

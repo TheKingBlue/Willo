@@ -3,6 +3,7 @@ import random
 #global variables
 GREETING = ['Hallo', 'Hey', 'Goededag', 'Sup', 'Heyo', 'Yo']
 GN = ['Goodnight', 'Sleep tight', 'Rest well', 'Night Night', 'Sleep well']
+GM = ['Goodmorning', 'Morning', "Mornin'"]
 COMMANDS = 'Commands, Help, Decide on, Cum, Play, Skip, Pause, Continue, Queue, Leave'
 
 async def decide(message):
@@ -52,6 +53,8 @@ async def get_name(message):
         return "Mees"
     elif message.author.id == 357153700139237378:
         return "Jamie"
+    elif message.author.id == 228536933335171072:
+        return "Mark"
     else:
         return None
 
@@ -74,6 +77,15 @@ async def goodnight(message):
         await message.channel.send(f'{gn}!')
     else:
         await message.channel.send(f"{gn} {naam}!")
+
+async def goodmorning(message):
+    gm = random.choice(GM)
+    naam = await get_name(message)
+
+    if naam == None:
+        await message.channel.send(f'{gm}!')
+    else:
+        await message.channel.send(f"{gm} {naam}!")
 
 async def willo(message):
     content = message.content.lower()
@@ -103,16 +115,17 @@ async def introduce(message):
         "As of right now I am only online when my maker has my script running. Not to worry tho, as a 24/7 uptime is in production.\n"
         "Anyway, I hope you will enjoy my presence. If you have any questions or suggestions, ask <@254534396390932491>!\n"
         "This is my first launch, I will keep you posted if I ever get updated!\n"
-        "*V2.1*")
+        "*V2.2*")
         await message.delete()
 
 async def update(message):
     if message.author.id == 254534396390932491:
         await message.channel.send(
-            "@everyone **Patch notes v2.0**\n"
-            "Yes! My second update! I am now in version 2.0!\n"
-            "I now run 24/7 on a RasberryPI, a mini-server in <@254534396390932491>'s house!\n\n"
-            "*V2.0*")
+            "**Patch notes v2.2**\n"
+            "A few small changes:\n"
+            "- Added goodmorning\n"
+            "- Added a greeting\n\n"
+            "*V2.2*")
         await message.delete()
 
 async def commands(message):
