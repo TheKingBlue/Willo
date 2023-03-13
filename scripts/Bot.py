@@ -103,7 +103,7 @@ async def on_message(message):
     if message.content.lower().startswith(('gn ', 'goodnight ', 'gngn ', 'night ')) or message.content.lower() == 'gn' or message.content.lower() == 'goodnight' or message.content.lower() == 'gngn' or message.content.lower() == 'night':
         await Responses.goodnight(message)
     
-    if message.content.lower().startswith(('gm ', 'goodmorning ', 'goedemorgen ')) or message.content.lower() == 'gm' or message.content.lower() == 'goodmorning' or message.content.lower() == 'goedemorgen':
+    if message.content.lower().startswith(('gm ', 'goodmorning ', 'goedemorgen ', 'goeiemorgen ', 'goedemorge ')) or message.content.lower() == 'gm' or message.content.lower() == 'goodmorning' or message.content.lower() == 'goedemorgen' or message.content.lower() == 'goeiemorgen' or message.content.lower() == 'goeiemorge' or message.content.lower() == 'goedemorge':
         await Responses.goodmorning(message)
 
     if message.content.lower().startswith('willo'):
