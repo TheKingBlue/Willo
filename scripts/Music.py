@@ -1,5 +1,5 @@
 import discord
-import youtube_dl
+import yt_dlp
 import pafy
 
 class Player():
@@ -39,7 +39,7 @@ async def play(message, bot, musicbot):
     elif voice.is_playing():
         try:
             if not ("youtube.com/watch?" in content or "https://youtu.be/" in content):
-                info = await bot.loop.run_in_executor(None, lambda: youtube_dl.YoutubeDL({"format" : "bestaudio", "quiet": True}).extract_info(f"ytsearch1:{content}", download=False, ie_key="YoutubeSearch"))
+                info = await bot.loop.run_in_executor(None, lambda: yt_dlp.YoutubeDL({"format" : "bestaudio", "quiet": True}).extract_info(f"ytsearch1:{content}", download=False, ie_key="YoutubeSearch"))
                 yturl = [entry["webpage_url"] for entry in info["entries"]]    
             else:
                 yturl = [content]
@@ -54,7 +54,7 @@ async def play(message, bot, musicbot):
     else:
         try:
             if not ("youtube.com/watch?" in content or "https://youtu.be/" in content):
-                info = await bot.loop.run_in_executor(None, lambda: youtube_dl.YoutubeDL({"format" : "bestaudio", "quiet": True}).extract_info(f"ytsearch1:{content}", download=False, ie_key="YoutubeSearch"))
+                info = await bot.loop.run_in_executor(None, lambda: yt_dlp.YoutubeDL({"format" : "bestaudio", "quiet": True}).extract_info(f"ytsearch1:{content}", download=False, ie_key="YoutubeSearch"))
                 yturl = [entry["webpage_url"] for entry in info["entries"]]            
             else:
                 yturl = [content]
