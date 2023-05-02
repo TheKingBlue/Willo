@@ -98,13 +98,16 @@ async def on_message(message):
 
     # message responses
     if message.content.lower().startswith(('hello ', 'hi ', 'hey ', 'hallo ', 'hoi ', 'jo ', 'yo ', 'willo hello ', 'willo hi ', 'willo hey ', 'willo hallo ', 'willo hoi ', 'willo jo ', 'willo yo ', 'sup ', 'willo sup ', 'wassup ')) or message.content.lower() == 'hello' or message.content.lower() == 'hi'or message.content.lower() == 'hey'or message.content.lower() == 'hallo' or message.content.lower() == 'hoi' or message.content.lower() == 'jo' or message.content.lower() == 'yo' or message.content.lower() == 'willo hello' or message.content.lower() == 'willo hi' or message.content.lower() == 'willo hey'or message.content.lower() == 'willo hallo'or message.content.lower() == 'willo hoi'or message.content.lower() == 'willo jo' or message.content.lower() == 'willo yo' or message.content.lower() == 'sup' or message.content.lower() == 'willo sup' or message.content.lower() == 'wassup':
-        await Responses.greet(message)
+        #await Responses.greet(message)
+        pass
     
     if message.content.lower().startswith(('gn ', 'goodnight ', 'gngn ', 'night ')) or message.content.lower() == 'gn' or message.content.lower() == 'goodnight' or message.content.lower() == 'gngn' or message.content.lower() == 'night':
-        await Responses.goodnight(message)
+        #await Responses.goodnight(message)
+        pass
     
     if message.content.lower().startswith(('gm ', 'goodmorning ', 'goedemorgen ', 'goeiemorgen ', 'goedemorge ')) or message.content.lower() == 'gm' or message.content.lower() == 'goodmorning' or message.content.lower() == 'goedemorgen' or message.content.lower() == 'goeiemorgen' or message.content.lower() == 'goeiemorge' or message.content.lower() == 'goedemorge':
-        await Responses.goodmorning(message)
+        #await Responses.goodmorning(message)
+        pass
 
     if message.content.lower().startswith('willo'):
         await Responses.willo(message)
