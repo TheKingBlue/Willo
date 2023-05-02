@@ -1,6 +1,5 @@
 import discord
 import yt_dlp
-import pafy
 
 class Player():
     def __init__(self, bot):
@@ -44,7 +43,7 @@ async def play(message, bot, musicbot):
             else:
                 yturl = [content]
                 
-            url = pafy.new(yturl[0]).getbestaudio().url
+            url = yt_dlp.new(yturl[0]).getbestaudio().url
             await message.channel.send(f"Added {yturl[0]} to queue!")
             musicbot.queue += [url]
             musicbot.names += [yturl]
@@ -59,7 +58,7 @@ async def play(message, bot, musicbot):
             else:
                 yturl = [content]
                 
-            url = pafy.new(yturl[0]).getbestaudio().url
+            url = yt_dlp.new(yturl[0]).getbestaudio().url
             await message.channel.send(f"Now playing: {yturl[0]}")
             musicbot.play(voice, url)
         except:
